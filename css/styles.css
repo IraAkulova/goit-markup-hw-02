@@ -115,6 +115,9 @@ body{
                                         font-size: 14px;
                                         line-height: 1.71;
                                         letter-spacing: 0.03em;}
+    .footer-address > a:hover, .footer-address > a:focus{color: var(--accent-background-color);}
+    .footer-e-mail > a:hover, .footer-e-mail > a:focus{color: var(--accent-background-color);}    
+    .footer-phone-number > a:hover, .footer-phone-number > a:focus{color: var(--accent-background-color);}
     .footer{background-color: var(--hero-background-color);}
   
     /* portfolio-styles */
