@@ -66,7 +66,8 @@ body{
                 display: flex;
                 align-items: center;
                 text-align: center;
-                letter-spacing: 0.06em;}
+                letter-spacing: 0.06em;
+                cursor: pointer;}
 
     /* section */
     .section-title{color: var(--title-text-color);
@@ -130,7 +131,8 @@ body{
             font-size: 16px;
             line-height: 1.62;
             text-align: center;
-            letter-spacing: 0.03em;}
+            letter-spacing: 0.03em;
+            cursor: pointer;}
     .button:hover, .button:focus{color: var(--accent-color);
         background-color: var(--accent-background-color);
         border: none;}
