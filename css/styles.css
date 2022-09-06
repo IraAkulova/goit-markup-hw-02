@@ -9,8 +9,8 @@
 
 :root{--primary-text-color: #757575;
 --title-text-color: #212121;
---accent-color: #ffffff;
---primary-background-color: #f5f5f5;
+--accent-color: #f5f5f5;
+--primary-background-color: #FFFFFF;
 --additional-background-color: #F5F4FA;
 --accent-background-color: #2196F3;
 --logo-color: #000000;
@@ -50,16 +50,17 @@ body{
 
     /* hero */
     .hero{background-color: var(--hero-background-color);}
-    .hero-header{color: var(--accent-color);
+    .hero-header{color: var(--primary-background-color);
                 font-weight: 900;
                 font-size: 44px;
                 line-height: 1.36;       
                 text-align: center;
                 letter-spacing: 0.06em;
                 text-transform: uppercase;}
-    .button-primary{color: var(--accent-color);
+    .button-primary{color: var(--primary-background-color);
                 background-color: var(--accent-background-color);
                 border: none;
+                font-family: inherit;
                 font-weight: 700;
                 font-size: 16px;
                 line-height: 1.88;
@@ -68,6 +69,7 @@ body{
                 text-align: center;
                 letter-spacing: 0.06em;
                 cursor: pointer;}
+    .button-primary:hover, .button-primary:focus{background-color: #188ce8;}
 
     /* section */
     .section-title{color: var(--title-text-color);
@@ -86,13 +88,23 @@ body{
                     font-size: 14px;
                     line-height: 1.71;        
                     letter-spacing: 0.03em;}
-    .hidden{display: none;}
+    .visually-hidden{position: absolute;
+                    white-space: nowrap;
+                    width: 1px;
+                    height: 1px;
+                    overflow: hidden;
+                    border: 0;
+                    padding: 0;
+                    clip: rect(0 0 0 0);
+                    clip-path: inset(50%);
+                    margin: -1px;}
     .name{color: var(--title-text-color);
                     font-weight: 500;
                     font-size: 16px;
                     line-height: 1.19;       
                     text-align: center;
                     letter-spacing: 0.03em;}
+    .card{background-color: var(--primary-background-color);}
     .team{background-color: var(--additional-background-color);
                     font-weight: 400;
                     font-size: 16px;
@@ -127,6 +139,7 @@ body{
     .button{color: var(--title-text-color);
             background-color:var(--additional-background-color) ;
             border: none;
+            font-family: inherit;
             font-weight: 500;
             font-size: 16px;
             line-height: 1.62;
@@ -135,7 +148,8 @@ body{
             cursor: pointer;}
     .button:hover, .button:focus{color: var(--accent-color);
         background-color: var(--accent-background-color);
-        border: none;}
+        border: none;
+        font-family: inherit;}
     .projects{background-color: var(--primary-background-color);}
     .project-title{color: var(--title-text-color);
                     font-weight: 700;
